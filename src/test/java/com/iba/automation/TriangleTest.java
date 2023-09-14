@@ -8,13 +8,15 @@ import static org.testng.Assert.*;
 
 public class TriangleTest {
 
+    //Suppose, that Integer.MAX_VALUE is a maximal acceptable value for triangle side length
+
     @Test(expectedExceptions = SideLengthException.class)
-    void If_any_side_is_zero_catch_SideLengthException_with_the_smallest_sides(){
-        Triangle triangle = new Triangle(0,1,1);
+    void If_any_side_is_zero_catch_SideLengthException(){
+        Triangle triangle = new Triangle(0,1,Integer.MAX_VALUE);
     }
     @Test(expectedExceptions = SideLengthException.class)
-    void If_any_side_is_zero_catch_SideLengthException_with_the_biggest_sides(){
-        Triangle triangle = new Triangle(0,Integer.MAX_VALUE,Integer.MAX_VALUE);
+    void If_any_side_is_more_than_max_value_catch_SideLengthException(){
+        Triangle triangle = new Triangle(1L + Integer.MAX_VALUE,Integer.MAX_VALUE,1);
     }
     @Test()
     void Equilateral_triangle_with_the_smallest_sides(){

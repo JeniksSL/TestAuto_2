@@ -11,15 +11,21 @@ public class Triangle {
     private final Side sideThree;
     private TriangleType triangleType;
 
-    public Triangle(int numberOne,int numberTwo,int numberThree) {
+    public Triangle(long numberOne,long numberTwo,long numberThree) {
         this.sideOne = new Side(numberOne);
         this.sideTwo = new Side(numberTwo);
         this.sideThree = new Side(numberThree);
         TreeSet<Side> sides = new TreeSet<>(List.of(sideOne, sideTwo,sideThree));
         Side larger= sides.last();
-        if (larger==sideOne) {if (sideOne.isNotLessThan(Side.sum(sideTwo,sideThree))) throw new TriangleException();}
-        else if (larger==sideTwo) {if (sideTwo.isNotLessThan(Side.sum(sideOne,sideThree))) throw new TriangleException();}
-        else {if (sideThree.isNotLessThan(Side.sum(sideOne,sideTwo))) throw new TriangleException();}
+        if (larger==sideOne) {
+            if (sideOne.isNotLessThanSumOfTwoOther(sideTwo,sideThree)) throw new TriangleException();
+        }
+        else if (larger==sideTwo) {
+            if (sideTwo.isNotLessThanSumOfTwoOther(sideOne,sideThree)) throw new TriangleException();
+        }
+        else {
+            if (sideThree.isNotLessThanSumOfTwoOther(sideOne,sideTwo)) throw new TriangleException();
+        }
         switch (sides.size()) {
             case 3 ->triangleType=TriangleType.SCALENE;
             case 2->triangleType=TriangleType.ISOSCELES;
