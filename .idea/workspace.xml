@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="246fa3d1-52c1-495f-a692-6ec7ebe300ea" name="Changes" comment="Triangle test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iba/automation/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iba/automation/Side.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iba/automation/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iba/automation/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iba/automation/exceptions/SideLengthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iba/automation/exceptions/SideLengthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/iba/automation/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/iba/automation/TriangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +24,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2VNtUEAGbDC4P43k1uup2Dv9FvP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,7 +66,7 @@
       <recent name="com.iba.automation" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TriangleTest">
+  <component name="RunManager" selected="TestNG.TriangleTest.All_positive_tests">
     <configuration name="TriangleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestAuto_2" />
       <extension name="coverage">
@@ -68,6 +78,24 @@
       <option name="PACKAGE_NAME" value="com.iba.automation" />
       <option name="MAIN_CLASS_NAME" value="com.iba.automation.TriangleTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.All_positive_tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestAuto_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iba.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iba.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.iba.automation.TriangleTest" />
+      <option name="METHOD_NAME" value="All_positive_tests" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -112,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TriangleTest.All_positive_tests" />
         <item itemvalue="TestNG.TriangleTest" />
         <item itemvalue="TestNG.TriangleTest.If_any_side_is_not_less_then_sum_of_two_other_catch_TriangleException_with_the_biggest_sides" />
         <item itemvalue="TestNG.TriangleTest.testCase8" />
@@ -128,6 +157,7 @@
       <updated>1694688382002</updated>
       <workItem from="1694688384253" duration="8632000" />
       <workItem from="1694697525761" duration="524000" />
+      <workItem from="1696750464635" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="Triangle test">
       <created>1694696857310</created>
@@ -147,7 +177,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="refactor_with_data_provider" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
